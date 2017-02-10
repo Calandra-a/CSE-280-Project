@@ -44,10 +44,10 @@ public class ControllerManager {
     public void testScene() throws Exception {
         setScene("../scenes/test/Scene.fxml");
     }
-    public void registerScene() throws Exception{
-        //setScene("../scenes/test/Scene.fxml");
+    /*public void registerScene() throws Exception{
+
         setScene("../scenes/register/Scene.fxml");
-    }
+    }*/
 
     /**
      * Switches to the designated Scene.
@@ -64,8 +64,9 @@ public class ControllerManager {
         ((BudgetMeController) fxmlLoader.getController()).setControllerManager(this);
         //Finally, change to the new scene
         stage.setScene(new Scene(root));
-    }
 
+        stage.setResizable(true);
+    }
     public boolean testPopUp() throws Exception {
         //Returns the value of pressed from the test Controller, by calling setPopUp
         //to create a new scene in a new window, then using its FXMLLoader to get

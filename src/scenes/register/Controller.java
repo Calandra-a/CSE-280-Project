@@ -19,23 +19,21 @@ public class Controller extends BudgetMeController {
      PasswordField passwordField2;
 
 
+      public void registerUser() throws Exception{
 
-
-    public void registerUser() throws Exception{
-        //Still needs to load window
-
-        controllerManager.registerScene();
-
-        if(textField.getText().length() < 6 && textField.getText().length() > 20)
-          System.out.println("Your username is either too long or too short!");
-        else if(passwordField1.getText().length() < 4 && passwordField1.getText().length() > 10)
-          System.out.println("Your password is either too long or too short!");
-        else if(passwordField1.getText() != passwordField2.getText()){
-          System.out.println("Your password is not matching!");
+        if(textField.getText().length() < 6 && textField.getText().length() > 20){
+          System.out.println("Your username is either too long or too short!");}
+        else if(passwordField1.getText().length() < 4 && passwordField1.getText().length() > 10){
+          System.out.println("Your password is either too long or too short!");}
+        else {
+            User newUser = new User(textField.getText(), passwordField1.getText());
+            User.register(newUser);
+            System.out.println("Registered!");
         }
-        User newUser = new User(textField.getText(), passwordField1.getText());
-        User.register(newUser);
-        System.out.println("Registered!");
+    }
+    public void switchScene() throws Exception{
+        controllerManager.setScene("../scenes/logIn/Scene.fxml");
+
     }
 
 

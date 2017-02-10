@@ -2,6 +2,7 @@ package scenes.logIn;
 
 import dataStorage.*;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -41,4 +42,9 @@ public class Controller extends BudgetMeController {
         settings.setRememberMeString(textField.getText());
         Settings.saveSettings(settings);
     }
+    public void registerWindow() throws Exception {
+        //controllerManager.registerScene();
+        controllerManager.setScene("../scenes/register/Scene.fxml");
+    }
+
 }

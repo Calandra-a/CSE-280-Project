@@ -4,16 +4,19 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(file:src/scenes/register/RegisterMe.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.register.Controller">
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(file:src/scenes/register/RegisterMe.jpg);" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.register.Controller">
    <center>
       <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="textField" promptText="Username" />
-            <PasswordField fx:id="passwordField1" promptText="Password" />
-            <PasswordField fx:id="passwordField2" prefHeight="25.0" prefWidth="119.0" promptText="Re-enter Password" />
-            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="71.0" text="Register!" />
+            <PasswordField fx:id="passwordField1" prefHeight="25.0" prefWidth="599.0" promptText="Password" />
+
+            <Button mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="71.0" text="Register!" />
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchScene" prefHeight="34.0" prefWidth="48.0" text="Done!" />
          </children>
       </VBox>
    </center>
