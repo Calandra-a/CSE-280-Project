@@ -44,6 +44,10 @@ public class ControllerManager {
     public void testScene() throws Exception {
         setScene("../scenes/test/Scene.fxml");
     }
+    public void registerScene() throws Exception{
+        //setScene("../scenes/test/Scene.fxml");
+        setScene("../scenes/register/Scene.fxml");
+    }
 
     /**
      * Switches to the designated Scene.
@@ -51,7 +55,7 @@ public class ControllerManager {
      * @param name The pathname of the .fxml to load.
      * @throws Exception IOException: file wasn't found, etc
      */
-    private void setScene(String name) throws Exception {
+    public void setScene(String name) throws Exception {
         //Get the scene and load it
         fxmlLoader = new FXMLLoader(getClass().getResource(name));
         root = fxmlLoader.load();
@@ -76,8 +80,8 @@ public class ControllerManager {
      * @return The FXMLLoader of the specified .fxml file, after the pop up window is closed.
      * @throws Exception IOException: file wasn't found, etc
      */
-    private FXMLLoader setPopUp(String name) throws Exception {
-        //Create a new stage, and change the modality so it must be dealt with
+    public FXMLLoader setPopUp(String name) throws Exception {
+        //Cwwreate a new stage, and change the modality so it must be dealt with
         Stage popUp = new Stage();
         popUp.initModality(Modality.APPLICATION_MODAL);
         //Do the same as in setScene, but with this popUp stage

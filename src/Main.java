@@ -15,8 +15,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         ControllerManager controllerManager = new ControllerManager(primaryStage);
         controllerManager.logInScene();
-        primaryStage.setMinWidth(600);
-        primaryStage.setMinHeight(400);
+        primaryStage.setMinWidth(1200);
+        primaryStage.setMinHeight(800);
         primaryStage.setTitle("BudgetMe");
         primaryStage.show();
     }

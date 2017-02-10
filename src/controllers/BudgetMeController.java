@@ -7,7 +7,7 @@ package controllers;
  */
 public abstract class BudgetMeController {
 
-    private ControllerManager controllerManager;
+    public ControllerManager controllerManager;
 
     /**
      * Gets the ControllerManager.
