@@ -16,7 +16,6 @@
 
             <Button mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="71.0" text="Register!" />
             <Pane prefHeight="200.0" prefWidth="200.0" />
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchScene" prefHeight="34.0" prefWidth="48.0" text="Done!" />
          </children>
       </VBox>
    </center>

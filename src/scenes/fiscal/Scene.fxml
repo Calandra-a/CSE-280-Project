@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Income">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="28.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="113.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ComboBox prefHeight="25.0" prefWidth="118.0" promptText="Pay Periods" />
+                           </children>
+                        </VBox>
+                     </center>
+                     <right>
+                        <TextArea fx:id="incomeDollarField1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="94.0" promptText="Income" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <Button layoutX="239.0" layoutY="102.0" mnemonicParsing="false" text="Submit" />
+                  <HBox layoutX="27.0" layoutY="186.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="214.0">
+                     <children>
+                        <TextField fx:id="incomeField" alignment="CENTER" cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Other (Name)" />
+                        <TextField fx:id="incomeDollarField2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="105.0" promptText="\$$ Amount" />
+                     </children>
+                  </HBox>
+                  <Button layoutX="240.0" layoutY="186.0" mnemonicParsing="false" text="Submit" />
+                  <Button fx:id="helpButton1" layoutX="506.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Expenses">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="14.0" layoutY="66.0" prefHeight="200.0" prefWidth="335.0">
+                     <left>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ChoiceBox prefWidth="150.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                              <ChoiceBox prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                     </left>
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="175.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="expenseField1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" promptText="Name of Expense" />
+                              <Pane prefHeight="100.0" prefWidth="235.0" />
+                              <TextField fx:id="expenseField2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="176.0" promptText="Name of Expense" />
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+                  <Button layoutX="388.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Submit" />
+                  <Button layoutX="388.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Submit" />
+                  <Button fx:id="helpButton2" layoutX="521.0" layoutY="14.0" mnemonicParsing="false" text="Help?" />
+                  <TextField fx:id="expenseDollarField1" layoutX="299.0" layoutY="66.0" prefHeight="25.0" prefWidth="69.0" promptText="\$$" />
+                  <TextField fx:id="expenseDollarField2" layoutX="299.0" layoutY="191.0" prefHeight="25.0" prefWidth="69.0" promptText="\$$" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

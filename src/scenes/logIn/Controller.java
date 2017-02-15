@@ -42,9 +42,9 @@ public class Controller extends BudgetMeController {
         settings.setRememberMeString(textField.getText());
         Settings.saveSettings(settings);
     }
-    public void registerWindow() throws Exception {
+    public void registerPopup() throws Exception {
         //controllerManager.registerScene();
-        controllerManager.setScene("../scenes/register/Scene.fxml");
+        controllerManager.registerPopUp();
     }
 
 }

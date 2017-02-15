@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-image: url(file:src/scenes/logIn/BudgetMe.jpg);" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.logIn.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-image: url(file:src/scenes/logIn/BudgetMe.jpg);" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.logIn.Controller">
    <center>
       <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="265.0" prefWidth="100.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -32,7 +32,7 @@
             <PasswordField fx:id="passwordField" promptText="Password" GridPane.rowIndex="1" />
             <CheckBox fx:id="checkBox" mnemonicParsing="false" onAction="#rememberFunction" text="Remember me" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onAction="#printUsernameAndPassword" text="Log In" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#registerWindow" prefHeight="25.0" prefWidth="99.0" text="Register" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#registerPopup" prefHeight="25.0" prefWidth="99.0" text="Register" GridPane.rowIndex="7" />
          </children>
       </GridPane>
    </center>
