@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -23,7 +22,7 @@
                      <center>
                         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="113.0" BorderPane.alignment="CENTER">
                            <children>
-                              <ComboBox prefHeight="25.0" prefWidth="118.0" promptText="Pay Periods" />
+                              <ComboBox fx:id="incomeBox1" prefHeight="25.0" prefWidth="118.0" promptText="Pay Periods" />
                            </children>
                         </VBox>
                      </center>
@@ -39,7 +38,6 @@
                      </children>
                   </HBox>
                   <Button layoutX="240.0" layoutY="186.0" mnemonicParsing="false" text="Submit" />
-                  <Button fx:id="helpButton1" layoutX="506.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
                </children></AnchorPane>
       </content>
     </Tab>
@@ -51,9 +49,12 @@
                      <left>
                         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
-                              <ChoiceBox prefWidth="150.0" />
-                              <HBox prefHeight="100.0" prefWidth="200.0" />
-                              <ChoiceBox prefWidth="150.0" />
+                              <HBox prefHeight="125.0" prefWidth="100.0">
+                                 <children>
+                                    <ComboBox fx:id="expenseBox1" prefWidth="150.0" />
+                                 </children>
+                              </HBox>
+                              <ComboBox fx:id="expenseBox2" prefWidth="150.0" />
                            </children>
                         </VBox>
                      </left>
@@ -69,7 +70,6 @@
                   </BorderPane>
                   <Button layoutX="388.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Submit" />
                   <Button layoutX="388.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Submit" />
-                  <Button fx:id="helpButton2" layoutX="521.0" layoutY="14.0" mnemonicParsing="false" text="Help?" />
                   <TextField fx:id="expenseDollarField1" layoutX="299.0" layoutY="66.0" prefHeight="25.0" prefWidth="69.0" promptText="\$$" />
                   <TextField fx:id="expenseDollarField2" layoutX="299.0" layoutY="191.0" prefHeight="25.0" prefWidth="69.0" promptText="\$$" />
                </children></AnchorPane>
